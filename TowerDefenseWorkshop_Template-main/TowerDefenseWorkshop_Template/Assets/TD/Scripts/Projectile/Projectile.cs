@@ -18,5 +18,12 @@
 		{
 			transform.position = transform.position + _moveSpeed * Time.deltaTime * transform.forward;
 		}
+
+		public void SetProjectileDamage(float newDamage)
+        {
+			UpdateDamage(newDamage);
+
+		}
+
 	}
 }

@@ -12,13 +12,14 @@ namespace GSGD1
 		[SerializeField]
 		private SpawnerManager _spawnerManager = null;
 
+		public StatsManager _statsManager = null;
+
 		public PlayerPickerController PlayerPickerController => _playerPickerController;
 		public SpawnerManager SpawnerManager => _spawnerManager;
-
-        public EntityManager entityManager = null;
+		public DatingMenu _datingMenu = null;
+		ublic EntityManager entityManager = null;
 
 		public EnemyCountManager enemyCountManager = null;
 
 		public Daycycle _daycycle;
-    }
 }

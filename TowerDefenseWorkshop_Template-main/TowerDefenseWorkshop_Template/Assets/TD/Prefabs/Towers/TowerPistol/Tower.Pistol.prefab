@@ -112,6 +112,8 @@ GameObject:
   - component: {fileID: 302692793403659942}
   - component: {fileID: 302692793403659943}
   - component: {fileID: 302692793403659936}
+  - component: {fileID: 8891452366789383608}
+  - component: {fileID: 410166265895485220}
   m_Layer: 0
   m_Name: Tower.Pistol
   m_TagString: Untagged
@@ -191,6 +193,66 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8891452366789383608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302692793403659941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c391021d064cead4bb5c4dbf755a7b63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue_Hello:
+  - Hello Senpai ! The weather is so nice today, isn't it ?
+  - 'Have you slept well ? We did out best to defend the house yesterday ! '
+  - I think I broke a circuit yesterday, could you check it out ?
+  - I'm ready for tomorrow, I hope the horde will be manageable...
+  - Did we woke you up during the night ? Sorry we made too much noise !
+  - I saw that an enemy dropped something shiny, did you get it ?
+  - Do you think we live in a simulation ?
+  - All work and no play makes me a happy turret !
+  dialogue_Ask:
+  - What is that ? is it for me !?
+  - Do you have something for me ?
+  - I could be more efficient if you gave me a gift, do you have one ?
+  dialogue_Thanks:
+  - Thank you Senpai ! I will do my best to protect you !
+  - This will fix my gears, thank you so much !
+  - I really needed that, my servos have been acting up for a while !
+  - I'm already feeling better now, thank you Senpai !
+  - Level Up woohoo !
+  - I can feel my imaginary numbers go up, thank you !
+  - Thanks !
+  dialogue_NoThanks:
+  - Oh... alright then...
+  - But... But I thought-
+  - Wow. Okay. Alright.
+  - Oh.. good thing I'm an emotionless machine then...
+  - I'm sure you're gonna give it to the other turrets... hmph !
+--- !u!114 &410166265895485220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302692793403659941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41181cad54987794baaf5232e24cfe0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentWeaponController: {fileID: 302692792590252287}
+  _rangeSphere: {fileID: 302692793403659943}
+  _maxLevel: 5
+  _currentDamage: 3
+  _attackSpeed: 1
+  _currentRange: 6
+  _addDamagePer: 0.5
+  _ReduceAttackSpeed: 0.2
+  _addRange: 1
 --- !u!1001 &837053345848257011
 PrefabInstance:
   m_ObjectHideFlags: 0
