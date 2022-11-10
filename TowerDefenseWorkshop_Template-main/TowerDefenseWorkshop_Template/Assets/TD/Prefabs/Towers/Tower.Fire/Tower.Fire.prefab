@@ -206,11 +206,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentWeaponController: {fileID: 302692792590252287}
   _rangeSphere: {fileID: 302692793403659943}
-  _currentDamage: 3
-  _attackSpeed: 1
+  _maxLevel: 5
+  _currentDamage: 0.2
+  _attackSpeed: 2
   _currentRange: 5
-  _addDamagePer: 0.5
-  _addAttackSpeed: 0.2
+  _addDamagePer: 0.1
+  _ReduceAttackSpeed: 0.2
   _addRange: 1
 --- !u!1001 &794283218134960184
 PrefabInstance:

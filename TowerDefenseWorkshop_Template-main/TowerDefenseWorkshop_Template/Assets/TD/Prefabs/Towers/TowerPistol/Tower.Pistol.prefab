@@ -113,6 +113,7 @@ GameObject:
   - component: {fileID: 302692793403659943}
   - component: {fileID: 302692793403659936}
   - component: {fileID: 8891452366789383608}
+  - component: {fileID: 410166265895485220}
   m_Layer: 0
   m_Name: Tower.Pistol
   m_TagString: Untagged
@@ -231,6 +232,27 @@ MonoBehaviour:
   - Wow. Okay. Alright.
   - Oh.. good thing I'm an emotionless machine then...
   - I'm sure you're gonna give it to the other turrets... hmph !
+--- !u!114 &410166265895485220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302692793403659941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41181cad54987794baaf5232e24cfe0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentWeaponController: {fileID: 302692792590252287}
+  _rangeSphere: {fileID: 302692793403659943}
+  _maxLevel: 5
+  _currentDamage: 3
+  _attackSpeed: 1
+  _currentRange: 6
+  _addDamagePer: 0.5
+  _ReduceAttackSpeed: 0.2
+  _addRange: 1
 --- !u!1001 &837053345848257011
 PrefabInstance:
   m_ObjectHideFlags: 0
