@@ -27,6 +27,13 @@
 
 		protected abstract void DoFire();
 
+		public void SetTimerNewTimer(float newTimer)
+		{
+			_timer.Set(newTimer, false);
+		}
+
 	}
+
+
 
 }

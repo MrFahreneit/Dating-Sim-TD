@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 302692792590252285}
-  - component: {fileID: 302692792590252287}
   - component: {fileID: 302692792590252284}
+  - component: {fileID: 6682247193196041670}
   m_Layer: 0
   m_Name: WeaponController
   m_TagString: Untagged
@@ -35,21 +35,6 @@ Transform:
   m_Father: {fileID: 302692793403659940}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &302692792590252287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 302692792590252162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a359563d28733241b63a6582bf325a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _weapon: {fileID: 302692792590252284}
-  _rotationSpeed: 10
-  _minAngleToFire: 10
 --- !u!114 &302692792590252284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,6 +53,21 @@ MonoBehaviour:
   _projectile: {fileID: 1697648429471405643, guid: a1a1140bdc5abfd4b923056be28d793a,
     type: 3}
   _projectileAnchor: {fileID: 302692792940769431}
+--- !u!114 &6682247193196041670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302692792590252162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a359563d28733241b63a6582bf325a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _weapon: {fileID: 302692792590252284}
+  _rotationSpeed: 5
+  _minAngleToFire: 10
 --- !u!1 &302692792940769428
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 302692793403659942}
   - component: {fileID: 302692793403659943}
   - component: {fileID: 302692793403659936}
+  - component: {fileID: -1128964330398681179}
   m_Layer: 0
   m_Name: Tower.Shotgun
   m_TagString: Untagged
@@ -148,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 234767b6b1df3734886a7cf6007a3667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponController: {fileID: 302692792590252287}
+  _weaponController: {fileID: 6682247193196041670}
   _damageableDetector: {fileID: 302692793403659942}
 --- !u!114 &302692793403659942
 MonoBehaviour:
@@ -191,6 +192,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-1128964330398681179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302692793403659941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41181cad54987794baaf5232e24cfe0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentWeaponController: {fileID: 6682247193196041670}
+  _rangeSphere: {fileID: 302692793403659943}
+  _maxLevel: 5
+  _currentDamage: 1
+  _attackSpeed: 0.5
+  _currentRange: 5
+  _addDamagePer: 0.5
+  _ReduceAttackSpeed: 0.05
+  _addRange: 1
 --- !u!1001 &3682831777927136884
 PrefabInstance:
   m_ObjectHideFlags: 0

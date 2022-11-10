@@ -12,7 +12,6 @@ public class UpdateText : MonoBehaviour
 
     private void Update()
     {
-
         coinsText.text = LevelReferences.Instance._statsManager.GetCoins() + " : Coins";
     }
 }
