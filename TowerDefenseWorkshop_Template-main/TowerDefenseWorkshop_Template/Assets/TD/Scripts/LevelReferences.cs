@@ -14,5 +14,11 @@ namespace GSGD1
 
 		public PlayerPickerController PlayerPickerController => _playerPickerController;
 		public SpawnerManager SpawnerManager => _spawnerManager;
-	}
+
+        public EntityManager entityManager = null;
+
+		public EnemyCountManager enemyCountManager = null;
+
+		public Daycycle _daycycle;
+    }
 }
