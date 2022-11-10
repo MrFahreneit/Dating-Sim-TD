@@ -38,6 +38,8 @@ namespace GSGD1
 		public delegate void SpawnerEvent(SpawnerManager sender, SpawnerStatus status, int runningWaveCount);
 		public event SpawnerEvent WaveStatusChanged = null;
 
+		public int CurrentWaveRunning => _currentWaveRunning;
+
 		[ContextMenu("Start waves")]
 		public void StartWaves()
 		{
