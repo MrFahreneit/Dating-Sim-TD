@@ -41,5 +41,11 @@
 		{
 			_lastLookRotation = transform.rotation;
 		}
+
+		public AWeapon GetWeapon()
+        {
+			return _weapon;
+
+		}
 	}
 }
