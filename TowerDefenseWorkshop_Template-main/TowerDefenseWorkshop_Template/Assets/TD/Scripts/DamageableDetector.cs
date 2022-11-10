@@ -66,7 +66,7 @@
 			}
 		}
 
-		private void Damageable_OnDamageTaken(Damageable caller, int currentHealth, int damageTaken)
+		private void Damageable_OnDamageTaken(Damageable caller, float currentHealth, float damageTaken)
 		{
 			if (currentHealth <= 0)
 			{

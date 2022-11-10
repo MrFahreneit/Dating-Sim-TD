@@ -8,7 +8,7 @@
 		private bool _destroyIfGiveDamage = true;
 
 		[SerializeField]
-		private int _damage = 1;
+		private float _damage = 1f;
 
 		protected virtual void OnTriggerEnter(Collider other)
 		{
