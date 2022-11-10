@@ -5,7 +5,7 @@
 	public class Damageable : MonoBehaviour
 	{
 		[SerializeField]
-		private int _health = 1;
+		private float _health = 1f;
 
 		[SerializeField]
 		private bool _destroyIfKilled = true;
@@ -16,7 +16,7 @@
 		[SerializeField]
 		private ParticleSystem _deathParticle = null;
 
-		public delegate void DamageableEvent(Damageable caller, int currentHealth, int damageTaken);
+		public delegate void DamageableEvent(Damageable caller, float currentHealth, float damageTaken);
 		private event DamageableEvent _damageTaken = null;
 
 		public event DamageableEvent DamageTaken
@@ -37,11 +37,11 @@
 			return _aimPosition.position;
 		}
 
-		public void TakeDamage(int damage)
+		public void TakeDamage(float damage)
 		{
 			_health -= damage;
 
-			if (_health <= 0)
+			if (_health <= 0f)
 			{
 				_damageTaken?.Invoke(this, _health, damage);
 
