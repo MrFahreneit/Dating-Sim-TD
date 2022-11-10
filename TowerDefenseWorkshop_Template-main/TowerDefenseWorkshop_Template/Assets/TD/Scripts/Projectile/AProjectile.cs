@@ -24,5 +24,11 @@
 				}
 			}
 		}
+
+		public void UpdateDamage(float newDamage)
+        {
+			_damage = newDamage;
+
+		}
 	}
 }
